@@ -1,0 +1,28 @@
+{
+  "name" : "Mechanist",
+  "title" : "Mechanist",
+  "gameVersion" : "1.12.2",
+  "features" : [ ],
+  "userFiles" : {
+    "include" : [
+      "options.txt",
+      "optionsshaders.txt",
+      "journeymap/*",
+      "resourcepacks/*",
+      "screenshots/*"
+    ],
+    "exclude" : [ ]
+  },
+  "launch" : {
+    "flags" : [
+      "-Dfml.ignoreInvalidMinecraftCertificates=true",
+      "-XX:+UseG1GC",
+      "-Dsun.rmi.dgc.server.gcInterval=2147483646",
+      "-XX:+UnlockExperimentalVMOptions",
+      "-XX:G1NewSizePercent=20",
+      "-XX:G1ReservePercent=20",
+      "-XX:MaxGCPauseMillis=50",
+      "-XX:G1HeapRegionSize=32M"
+    ]
+  }
+}

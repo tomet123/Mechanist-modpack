@@ -1,0 +1,9 @@
+mods.jei.JEI.hide(<minecraft:command_block>);
+mods.jei.JEI.hide(<minecraft:barrier>);
+mods.jei.JEI.hide(<minecraft:grass_path>); 
+mods.jei.JEI.hide(<minecraft:repeating_command_block>); 
+mods.jei.JEI.hide(<minecraft:chain_command_block>); 
+mods.jei.JEI.hide(<minecraft:structure_void>); 
+mods.jei.JEI.hide(<minecraft:structure_block>); 
+mods.jei.JEI.hide(<minecraft:filled_map>); 
+mods.jei.JEI.hide(<minecraft:written_book>); 
