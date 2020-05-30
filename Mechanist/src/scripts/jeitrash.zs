@@ -7,3 +7,4 @@ mods.jei.JEI.hide(<minecraft:structure_void>);
 mods.jei.JEI.hide(<minecraft:structure_block>); 
 mods.jei.JEI.hide(<minecraft:filled_map>); 
 mods.jei.JEI.hide(<minecraft:written_book>); 
+mods.jei.JEI.hide(<appliedenergistics2:facade>);
