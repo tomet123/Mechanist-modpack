@@ -1,172 +1,293 @@
 {
     "images":
     {
-        "title":
+		"bg_menu":
         {
-            "image" : "custommainmenu:textures/gui/minecraft.png",
-            "posX" : -137,
-            "posY" : 30,
-            "width" : 512,
-            "height" : 512,
-            "alignment" : "top_center"
+            "image" : "tekkitcore:gui/bg_menu.png",
+            "posX" : 70,
+            "posY" : -1513,
+            "width" : 200,
+            "height" : 1500,
+            "alignment" : "bottom_left"
         },
-        
-        "edition":
+		"bg_info":
         {
-            "image" : "custommainmenu:textures/gui/edition.png",
-            "posX" : -49,
-            "posY" : 67,
+            "image" : "tekkitcore:gui/bg_info.png",
+            "posX" : -10,
+            "posY" : -13,
+            "width" : 20000,
+            "height" : 20,
+            "alignment" : "bottom_left"
+        },
+		"bg_news":
+        {
+            "image" : "tekkitcore:gui/bg_info.png",
+            "posX" : 270,
+            "posY" : 0,
+            "width" : 20000,
+            "height" : 20,
+            "alignment" : "top_left"
+        },
+		"bg_playerinfo":
+        {
+            "image" : "tekkitcore:gui/bg_info.png",
+            "posX" : -100,
+            "posY" : -100,
+            "width" : 100,
+            "height" : 200,
+            "alignment" : "right_center"
+        },
+		"playerHead":
+        {
+            "image" : "web:https://minotar.net/helm/#username#/60.png",
+            "posX" : -90,
+            "posY" : -75,
+            "width" : 60,
+            "height" : 60,
+            "alignment" : "right_center"
+        },
+		"logo":
+        {
+            "image" : "tekkitcore:gui/circle.png",
+            "posX" : 106,
+            "posY" : 10,
             "width" : 128,
-            "height" : 16,
-            "alignment" : "top_center"
+            "height" : 128,
+            "alignment" : "top_left"
         }
-    },
+	
+	},
     
     "buttons":
-    {
-        "singleplayer":
+    {     
+		"play":
         {
-            "text" : "menu.singleplayer",
-            "posX" : -100,
-            "posY" : 48,
+            "text" : "Play",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 8529123,
+			"texture" : "tekkitcore:gui/btn.png",
+            "posX" : 70,
+            "posY" : 150,
             "width" : 200,
             "height" : 20,
+			"imageWidth" : 100,
+			"imageHeight" : 50,
+			"alignment" : "top_left",
+            "action" : 
+            {
+                "type" : "connectToServer",
+                "ip" : "play.tekkitcore.cz"
+            }
+        },		
+
+		"playoffline":
+        {
+            "text" : "Play offline",			
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 8529123,
+			"texture" : "tekkitcore:gui/btn.png",
+            "posX" : 70,
+            "posY" : 170,
+            "width" : 200,
+            "height" : 20,
+			"imageWidth" : 100,
+			"imageHeight" : 50,
+			"alignment" : "top_left",
             "action" : 
             {
                 "type" : "openGui",
                 "gui" : "singleplayer"
             }
         },
-        
-        "multiplayer":
-        {
-            "text" : "menu.multiplayer",
-            "posX" : -100,
-            "posY" : 72,
-            "width" : 200,
-            "height" : 20,
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "multiplayer"
-            }
-        },
-        
-        "mods":
-        {
-            "text" : "fml.menu.mods",
-            "posX" : -100,
-            "posY" : 96,
-            "width" : 200,
-            "height" : 20,
-            "action" : 
-            {
-                "type" : "openGui",
-                "gui" : "mods"
-            }
-        },
-            
-        "options":
+               
+		"options":
         {
             "text" : "menu.options",
-            "posX" : -100,
-            "posY" : 132,
-            "width" : 98,
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 8529123,
+			"texture" : "tekkitcore:gui/btn.png",
+            "posX" : 70,
+            "posY" : 210,
+            "width" : 200,
             "height" : 20,
+			"imageWidth" : 100,
+			"imageHeight" : 50,
+			"alignment" : "top_left",
             "action" : 
             {
                 "type" : "openGui",
                 "gui" : "options"
             }
         },
-        
-        "quit":
+		        
+		"language":
         {
-            "text" : "menu.quit",
-            "posX" : 2,
-            "posY" : 132,
-            "width" : 98,
+            "text" : "options.language",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 8529123,
+			"texture" : "tekkitcore:gui/btn.png",
+            "posX" : 70,
+            "posY" : 230,
+            "width" : 200,
             "height" : 20,
-            "action" : 
-            {
-                "type" : "quit"
-            }
-        },
-        
-        "language":
-        {
-            "text" : "",
-            "posX" : -124,
-            "posY" : 132,
-            "width" : 20,
-            "height" : 20,
+			"imageWidth" : 100,
+			"imageHeight" : 50,
+			"alignment" : "top_left",
             "action" : 
             {
                 "type" : "openGui",
                 "gui" : "languages"
             }
         },
-        
-        "refresh":
+                    
+        "quit":
         {
-            "text" : "",
-            "posX" : -154,
-            "posY" : 132,
-            "width" : 20,
+            "text" : "menu.quit",
+			"normalTextColor" : 16729156,
+			"hoverTextColor" : 14483456,
+			"texture" : "tekkitcore:gui/btn.png",
+            "posX" : 70,
+            "posY" : 250,
+            "width" : 200,
             "height" : 20,
-            "texture" : "custommainmenu:textures/gui/buttons.png",
+			"imageWidth" : 100,
+			"imageHeight" : 50,
+			"alignment" : "top_left",
             "action" : 
             {
-                "type" : "refresh"
+                "type" : "quit"
+            }
+        },
+		
+        "mods":
+        {
+            "text" : "Mods (#modsloaded#/#modsactive#)",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 8529123,
+			"texture" : "tekkitcore:gui/btn.png",
+            "posX" : 70,
+            "posY" : -40,
+            "width" : 200,
+            "height" : 20,
+			"imageWidth" : 100,
+			"imageHeight" : 50,
+			"alignment" : "bottom_left",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+		
+        "secretButton":
+        {
+            "text" : "    ",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 8529123,
+			"texture" : "tekkitcore:gui/btn.png",
+            "posX" : -20,
+            "posY" : 0,
+            "width" : 20,
+            "height" : 20,
+			"alignment" : "top_right",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
             }
         }
-    },
+	},
     
     "labels":
     {
         "mojang":
         {
-            "text" : "Copyright Mojang AB. Do not distribute!",
-            "hoverText" : "§nCopyright Mojang AB. Do not distribute!",
-            "posX" : -197,
+            "text" : "F: #forgeversion# MC: #mcversion# - Copyright Mojang AB. Do not distribute!",
+            "posX" : 2,
             "posY" : -10,
-            "color" : -1,
-            "alignment" : "bottom_right",
-            "action" : 
+            "color" : 6710886,
+            "alignment" : "bottom_left",
+			"action" : 
             {
-                "type" : "openGui",
-                "gui" : "credits"
+                "type" : "refresh"
             }
         },
         
-        "fml":
+		"packWeb":
         {
-            "text" : "",
-            "posX" : 2,
-            "posY" : -40,
-            "color" : -1,
-            "alignment" : "bottom_left"
+            "text" : "Tekkitcore.cz",
+            "posX" : -70,
+            "posY" : -10,
+            "color" : 8529123,
+            "alignment" : "bottom_right",
+			"action" : 
+            {
+                "type" : "openLink",
+				"link" : "https://tekkitcore.cz/"
+            }
+        },
+        
+		"serverStatusText":
+        {
+            "text" : "Server status: ",
+            "posX" : -260,
+            "posY" : -10,
+            "color" : 12303291,
+			"refreshInterval": 60,
+            "alignment" : "bottom_right"
+        },
+        
+		"serverStatus":
+        {
+			"text": { "type": "web", "url": "http://launcher.tekkitcore.cz/scripts/status.php", "refreshInterval": 60 },
+            "posX" : -170,
+            "posY" : -10,
+            "color" : 12303291,
+            "alignment" : "bottom_right"
+        },
+		
+		"serverNews":
+        {
+			"text": { "type": "web", "url": "http://launcher.tekkitcore.cz/scripts/novinky.php", "refreshInterval": 60 },
+            "posX" : 280,
+            "posY" : 4,
+			"fontSize" : 1.5,
+            "color" : 12303291,
+			"refreshInterval": 60,
+            "alignment" : "top_left",
+			"action" : 
+            {
+                "type" : "openLink",
+				"link" : "https://tekkitcore.cz/"
+            }
+        },
+        
+		"playerName":
+        {
+            "text" : "#username#",
+            "posX" : -90,
+            "posY" : -90,
+            "color" : 12303291,
+			"refreshInterval": 60,
+            "alignment" : "right_center"
+        },
+        
+		"playerStats":
+        {
+            "text" : "Penize: 0\n\nNahrano: 0 h",
+            "posX" : -90,
+            "posY" : -5,
+            "color" : 12303291,
+            "alignment" : "right_center"
         }
     },
     
     "other":
     {
-        "splash-text":
-        {
-            "posX" : 90,
-            "posY" : 70,
-            "color" : -256,
-            "alignment" : "top_center",
-            "texts" : "file:minecraft:texts/splashes.txt"
-        },
-        
-        "panorama":
-        {
-            "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
-            "animate" : true,
-            "animationSpeed" : 1,
-            "blur" : true,
-            "gradient" : true
-        }
+		"background":
+		{
+			"image" : ["tekkitcore:gui/bg1.png","tekkitcore:gui/bg2.png"],
+			"mode" : "fill"
+		}
     }
 }
